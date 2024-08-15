@@ -1,6 +1,9 @@
 body {
   background-color: #efe9e4;
-  font-family: "Poppins", sans-serif;
+  font-family: "Edu AU VIC WA NT Hand", cursive;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
   margin: 0px;
   padding: 0px;
 }
@@ -31,6 +34,12 @@ a {
   background-color: #6c6054;
 }
 
+h1,
+h2 {
+  margin: 0px;
+  padding: 0px;
+}
+
 .apresentacao {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -38,8 +47,16 @@ a {
   padding: 0px;
 }
 
-h1,
-h2 {
-  margin: 0px;
-  padding: 0px;
+.conteudo {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.titulo {
+  font-size: 2rem;
+  color: #5b5652;
+}
+
+.subtitulo {
+  color: #a49b94;
 }
