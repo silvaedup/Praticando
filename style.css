@@ -1,22 +1,27 @@
 body {
-  background-color: darkcyan;
-  color: white;
+  background-color: #efe9e4;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   margin: 0px;
   padding: 0px;
 }
 
 .menu {
   display: flex;
-  background-color: cyan;
+  background-color: #96877c;
   margin: 0px;
   justify-content: end;
 }
 
-.menu-componentes {
+.menu-componentes,
+a {
   list-style: none;
-  padding: 1rem;
+  text-decoration: none;
+  padding: 1rem 0.5rem;
+  color: #ffffff;
 }
 
-a {
-  text-decoration: none;
+.menu-componentes:hover {
+  text-decoration: underline;
+  color: #ffffff;
 }
