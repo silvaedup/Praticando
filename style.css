@@ -30,3 +30,16 @@ a {
   border-radius: 1rem;
   background-color: #6c6054;
 }
+
+.apresentacao {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0px;
+  padding: 0px;
+}
+
+h1,
+h2 {
+  margin: 0px;
+  padding: 0px;
+}
