@@ -8,7 +8,8 @@ body {
 .menu {
   display: flex;
   background-color: #96877c;
-  margin: 0px;
+  margin: 5px;
+  border-radius: 1rem;
   justify-content: end;
 }
 
@@ -27,7 +28,8 @@ a {
 .menu-componentes-orcamento {
   list-style: none;
   text-decoration: none;
-  padding: 1rem 0.5rem;
+  padding: 0.5rem 0.5rem;
+  border-radius: 1rem;
   color: #ffffff;
   background-color: #6c6054;
 }
