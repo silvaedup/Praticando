@@ -48,7 +48,7 @@ h2 {
 }
 
 .conteudo {
-  margin-top: 4rem;
+  margin-top: 14rem;
   text-align: center;
 }
 
@@ -60,6 +60,9 @@ h2 {
 .subtitulo {
   font-size: 1.9rem;
   color: #a49b94;
+}
+p {
+  font-size: 1.5rem;
 }
 
 .foto-conteudo {
