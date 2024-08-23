@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  position: fixed; /* Fixar a posição da navbar */
+  top: 0; /* Alinhar ao topo da página */
+  left: 0; /* Alinhar à esquerda da página */
+  width: 98.5%; /* Ocupa toda a largura da página */
+  background-color: #333;
+  margin: 0.5rem;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  z-index: 1000; /* Garante que a navbar esteja sobre outros elementos */
+}
+
+.nav-items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end; /* Alinha os itens à direita */
+}
+
+.nav-items li {
+  margin-left: 20px; /* Espaço entre os itens */
+}
+
+.nav-items a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+  display: block; /* Garante que o link ocupe toda a área do item */
+}
+
+.nav-items a:hover {
+  background-color: #575757;
+}
+
+main {
+  margin: 0.5rem;
+  padding-top: 60px; /* Espaço para compensar a altura da navbar fixa */
+}
