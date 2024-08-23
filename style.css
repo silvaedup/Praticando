@@ -8,7 +8,7 @@ body {
   top: 0; /* Alinhar ao topo da página */
   left: 0; /* Alinhar à esquerda da página */
   width: 98.5%; /* Ocupa toda a largura da página */
-  background-color: #333;
+  background-color: rgb(15, 135, 175);
   margin: 0.5rem;
   border-radius: 1rem;
   padding: 0.5rem;
@@ -24,18 +24,24 @@ body {
 }
 
 .nav-items li {
-  margin-left: 20px; /* Espaço entre os itens */
+  margin-left: 1.25rem; /* Espaço entre os itens */
 }
 
 .nav-items a {
   color: white;
   text-decoration: none;
-  padding: 8px 16px;
+  padding: 0.5rem 1rem;
   display: block; /* Garante que o link ocupe toda a área do item */
 }
 
 .nav-items a:hover {
-  background-color: #575757;
+  text-decoration: underline;
+}
+
+.registry {
+  background-color: rgb(5, 94, 124);
+  border-radius: 0.5rem;
+  text-transform: uppercase;
 }
 
 main {
