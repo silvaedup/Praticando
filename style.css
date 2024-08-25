@@ -48,3 +48,13 @@ main {
   margin: 0.5rem;
   padding-top: 60px; /* Espaço para compensar a altura da navbar fixa */
 }
+
+section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+img {
+  max-width: 640px;
+  max-height: 640px;
+}
