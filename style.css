@@ -1,18 +1,32 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: "Mulish", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  background-color: #efe9e4;
+  color: white;
 }
 
 .navbar {
-  position: fixed; /* Fixar a posição da navbar */
-  top: 0; /* Alinhar ao topo da página */
-  left: 0; /* Alinhar à esquerda da página */
-  width: 98.5%; /* Ocupa toda a largura da página */
-  background-color: rgb(15, 135, 175);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 98.5%;
+  background-color: #96877c;
   margin: 0.5rem;
   border-radius: 1rem;
   padding: 0.5rem;
-  z-index: 1000; /* Garante que a navbar esteja sobre outros elementos */
+  z-index: 1000;
+  display: flex;
+  align-items: center; /* Alinha verticalmente a imagem e os itens textuais */
+}
+
+.navbar img {
+  margin-left: 1rem;
+  margin-right: auto; /* Empurra os itens textuais para a direita */
+  height: 40px; /* Ajuste a altura conforme necessário */
+  border-radius: 0.25rem;
 }
 
 .nav-items {
@@ -20,18 +34,17 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: flex-end; /* Alinha os itens à direita */
 }
 
 .nav-items li {
-  margin-left: 1.25rem; /* Espaço entre os itens */
+  margin-left: 1px;
 }
 
 .nav-items a {
   color: white;
   text-decoration: none;
   padding: 0.5rem 1rem;
-  display: block; /* Garante que o link ocupe toda a área do item */
+  display: block;
 }
 
 .nav-items a:hover {
@@ -39,22 +52,69 @@ body {
 }
 
 .registry {
-  background-color: rgb(5, 94, 124);
-  border-radius: 0.5rem;
   text-transform: uppercase;
 }
 
 main {
-  margin: 0.5rem;
-  padding-top: 60px; /* Espaço para compensar a altura da navbar fixa */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding-top: 3rem;
 }
 
 section {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  max-width: 1200px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
-img {
+section img {
   max-width: 640px;
   max-height: 640px;
+}
+
+.text {
+  grid-column: 1;
+  text-align: center;
+}
+
+.text h1 {
+  font-size: 3.5rem;
+  color: #5b5652;
+}
+
+.text h2 {
+  font-size: 3rem;
+  color: #a49b94;
+}
+
+.sonho {
+  font-size: 2rem;
+  margin: 4rem;
+  color: #a59c95;
+}
+
+.text a {
+  text-decoration: none;
+  color: white;
+  background-color: #96877c;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin: 0 1rem 0 0;
+  font-size: 1.5rem;
+}
+
+.item {
+  grid-column: 2;
+}
+
+.item img {
+  border-radius: 2rem;
 }
