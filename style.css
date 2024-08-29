@@ -63,9 +63,8 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   margin: 0;
-  padding-top: 40rem; /* Ajuste conforme necessário */
+  padding-top: 0; /* Ajuste conforme necessário */
 }
 
 section {
@@ -128,6 +127,7 @@ section img {
 }
 
 .subtitle {
+  display: contents;
   color: #5e5343;
   font-size: 5rem;
   margin-top: 4rem;
@@ -175,4 +175,26 @@ section img {
 .button2:hover {
   color: white;
   text-decoration: underline;
+}
+
+.contact {
+  display: flex;
+  color: #5e5343;
+  font-size: 5rem;
+  margin-top: 4rem;
+}
+
+.contact--items {
+  display: grid;
+}
+.icons {
+  columns: 1;
+}
+
+.contact--items__icons {
+  grid-template-columns: 1fr 1fr;
+  columns: 2;
+  padding: 2rem;
+  border: solid 4px #5e5343;
+  background-color: #ffffff;
 }
