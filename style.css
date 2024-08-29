@@ -20,7 +20,7 @@ body {
   z-index: 1000;
   display: flex;
   align-items: center;
-  margin-bottom: 3rem; /* Ajuste conforme necessário */
+  margin-bottom: 3rem;
 }
 
 .navbar img {
@@ -64,7 +64,7 @@ main {
   justify-content: center;
   align-items: center;
   margin: 0;
-  padding-top: 0; /* Ajuste conforme necessário */
+  padding-top: 0;
 }
 
 section {
@@ -178,23 +178,37 @@ section img {
 }
 
 .contact {
-  display: flex;
   color: #5e5343;
   font-size: 5rem;
   margin-top: 4rem;
+  margin-bottom: 0;
+  justify-content: left;
+  justify-items: left;
+  text-align: left;
+  align-content: start;
 }
 
 .contact--items {
   display: grid;
-}
-.icons {
-  columns: 1;
+  grid-template-columns: 1fr 2fr; /* Define duas colunas para ícones e detalhes de contato */
+  gap: 1rem; /* Espaçamento entre as colunas */
+  align-items: start; /* Alinha os itens no início verticalmente */
 }
 
-.contact--items__icons {
-  grid-template-columns: 1fr 1fr;
-  columns: 2;
-  padding: 2rem;
-  border: solid 4px #5e5343;
-  background-color: #ffffff;
+.contact-icons {
+  display: flex;
+  flex-direction: column; /* Coloca os ícones em uma coluna */
+  gap: 1rem; /* Espaçamento entre os ícones */
+  align-items: flex-start; /* Garante que os ícones estejam alinhados à esquerda */
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column; /* Coloca os detalhes de contato em uma coluna */
+  gap: 1rem; /* Espaçamento entre os detalhes */
+}
+
+.icons {
+  width: 40px; /* Ajuste conforme necessário */
+  height: 40px; /* Ajuste conforme necessário */
 }
