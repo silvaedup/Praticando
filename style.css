@@ -104,7 +104,7 @@ section img {
   color: #a59c95;
 }
 
-.text a {
+.button {
   text-decoration: none;
   color: white;
   background-color: #96877c;
@@ -114,7 +114,8 @@ section img {
   font-size: 1.5rem;
 }
 
-.text a:hover {
+.button:hover {
+  color: white;
   text-decoration: underline;
 }
 
@@ -154,4 +155,24 @@ section img {
   color: #ffffff;
   font-weight: 600;
   font-size: 1rem;
+}
+
+.projects--items a:hover {
+  text-decoration: underline;
+}
+
+.button2 {
+  text-decoration: none;
+  color: white;
+  background-color: #6c6054;
+  padding: 1rem 5rem;
+  border-radius: 0.5rem;
+  margin: 0 1rem 0 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.button2:hover {
+  color: white;
+  text-decoration: underline;
 }
