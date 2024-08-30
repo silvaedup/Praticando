@@ -177,38 +177,24 @@ section img {
   text-decoration: underline;
 }
 
+.baseboard {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding-top: 0;
+}
+
 .contact {
   color: #5e5343;
   font-size: 5rem;
   margin-top: 4rem;
   margin-bottom: 0;
-  justify-content: left;
-  justify-items: left;
-  text-align: left;
-  align-content: start;
+  text-align: left; /* Alinha o texto à esquerda */
 }
 
 .contact--items {
-  display: grid;
-  grid-template-columns: 1fr 2fr; /* Define duas colunas para ícones e detalhes de contato */
-  gap: 1rem; /* Espaçamento entre as colunas */
-  align-items: start; /* Alinha os itens no início verticalmente */
-}
-
-.contact-icons {
-  display: flex;
-  flex-direction: column; /* Coloca os ícones em uma coluna */
-  gap: 1rem; /* Espaçamento entre os ícones */
-  align-items: flex-start; /* Garante que os ícones estejam alinhados à esquerda */
-}
-
-.contact-details {
-  display: flex;
-  flex-direction: column; /* Coloca os detalhes de contato em uma coluna */
-  gap: 1rem; /* Espaçamento entre os detalhes */
-}
-
-.icons {
-  width: 40px; /* Ajuste conforme necessário */
-  height: 40px; /* Ajuste conforme necessário */
+  display: flex; /* Usa flexbox para alinhar os itens */
+  align-items: flex-start; /* Alinha os itens no início verticalmente */
+  gap: 2rem; /* Espaçamento entre os ícones e detalhes de contato */
 }
