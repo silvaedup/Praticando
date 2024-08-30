@@ -64,7 +64,7 @@ main {
   justify-content: center;
   align-items: center;
   margin: 0;
-  padding-top: 0;
+  padding-top: 10rem;
 }
 
 section {
@@ -178,27 +178,44 @@ section img {
 }
 
 .baseboard {
-  display: flex; /* Usa flexbox para centralizar o conteúdo */
-  flex-direction: column; /* Alinha os itens em uma coluna */
-  align-items: center; /* Centraliza horizontalmente */
-  justify-content: center; /* Centraliza verticalmente, se necessário */
-  margin: 0;
-  padding: 2rem; /* Adiciona algum padding ao redor, ajuste conforme necessário */
-  color: white; /* Cor do texto para contraste */
+  margin-top: 4rem;
+  background-color: #96877c;
+  display: flex; /* Usa Flexbox para alinhar os itens */
+  flex-direction: column; /* Organiza os itens em uma coluna */
+  padding: 2rem 1rem; /* Adiciona espaçamento interno */
 }
 
-.baseboard p {
-  text-align: left;
-}
-.contact {
-  color: #5e5343;
-  font-size: 5rem;
-  margin: 2rem 0; /* Ajusta a margem superior e inferior */
+.baseboard h3 {
+  font-size: 5rem; /* Ajuste o tamanho da fonte conforme necessário */
+  font-weight: 100;
+  margin-bottom: 2rem; /* Ajusta a margem inferior do título */
+  margin-left: 16.5rem;
 }
 
-.contact--items {
-  display: flex; /* Usa flexbox para alinhar os itens */
-  flex-direction: column; /* Alinha os itens em uma coluna */
-  align-items: center; /* Centraliza horizontalmente */
-  gap: 1rem; /* Espaçamento entre os itens */
+.baseboard ul {
+  list-style: none;
+  padding: 0; /* Remove o padding padrão do ul */
+  margin: 0; /* Remove a margem padrão do ul */
+  display: flex; /* Usa Flexbox para alinhar os itens da lista */
+  justify-content: center; /* Centraliza os itens horizontalmente */
+  gap: 2rem; /* Espaçamento entre os itens */
+}
+
+.baseboard li {
+  min-width: 25rem; /* Define uma largura minima para os itens */
+  max-width: 25rem; /* Define uma largura máxima para os itens */
+  padding: 1rem;
+  border: solid 1px #ffffff;
+  text-align: center; /* Centraliza o texto dentro do li */
+  border-radius: 0.5rem; /*serve para arredondar as bordas*/
+}
+
+.baseboard a {
+  font-size: 1.25rem;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.baseboard a:hover {
+  text-decoration: underline;
 }
