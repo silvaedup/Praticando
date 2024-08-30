@@ -178,23 +178,27 @@ section img {
 }
 
 .baseboard {
-  display: block;
-  justify-content: center;
-  align-items: center;
+  display: flex; /* Usa flexbox para centralizar o conteúdo */
+  flex-direction: column; /* Alinha os itens em uma coluna */
+  align-items: center; /* Centraliza horizontalmente */
+  justify-content: center; /* Centraliza verticalmente, se necessário */
   margin: 0;
-  padding-top: 0;
+  padding: 2rem; /* Adiciona algum padding ao redor, ajuste conforme necessário */
+  color: white; /* Cor do texto para contraste */
 }
 
+.baseboard p {
+  text-align: left;
+}
 .contact {
   color: #5e5343;
   font-size: 5rem;
-  margin-top: 4rem;
-  margin-bottom: 0;
-  text-align: left; /* Alinha o texto à esquerda */
+  margin: 2rem 0; /* Ajusta a margem superior e inferior */
 }
 
 .contact--items {
   display: flex; /* Usa flexbox para alinhar os itens */
-  align-items: flex-start; /* Alinha os itens no início verticalmente */
-  gap: 2rem; /* Espaçamento entre os ícones e detalhes de contato */
+  flex-direction: column; /* Alinha os itens em uma coluna */
+  align-items: center; /* Centraliza horizontalmente */
+  gap: 1rem; /* Espaçamento entre os itens */
 }
